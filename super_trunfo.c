@@ -43,7 +43,7 @@ int main() {
 
     switch (menu)
     {
-    case 1:
+    case 1: // Mostrar as Cartas Cadastradas
         printf("\n==* CARTAS CADASTRADAS *==\n");
         printf("Carta 1:\n");
         printf("Nome da Cidade: %s (%s)\n", carta1_cidade, carta1_estado);
@@ -64,7 +64,7 @@ int main() {
         printf("PIB per Capita: %.3f reais\n", carta2_pibPerCapita);
         break;
 
-    case 2:
+    case 2: // Menu de escolha para Comparação das Cartas com um Atributo
         printf("\n==* COMPARAÇÃO DE CARTAS COM UM ATRIBUTO *==\n");
         printf("A regra geral é: vence a carta com o maior valor no atributo escolhido.\n");
         printf("Porém, para a Densidade Populacional, a regra inverte: vence a carta com o menor valor.\n");
@@ -175,7 +175,7 @@ int main() {
         }
         break;
 
-    case 3:
+    case 3: // Menu de escolha para Comparação das Cartas com dois Atributos
         printf("\n==* COMPARAÇÃO DE CARTAS COM DOIS ATRIBUTOS *==\n");
         printf("A regra geral é: vence a carta com o maior valor no atributo escolhido.\n");
         printf("Porém, para a Densidade Populacional, a regra inverte: vence a carta com o menor valor.\n");
@@ -262,6 +262,7 @@ int main() {
             printf("Você escolheu o mesmo atributo nas duas opções, tente novamente.\n");
         }
 
+        // Mostrar qual foi a Carta Vencedora da Comparação de dois Atributos
         if (escolha1 && escolha2)
         {
             printf("Resultado: A Carta (%s) venceu!\n", carta1_cidade);
